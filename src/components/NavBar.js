@@ -38,6 +38,7 @@ function NavBar() {
             />
           </InputGroup>
           <HStack
+            ml="10"
             bg="#262d3a"
             d={{ base: "none", md: "flex" }}
             p={4}

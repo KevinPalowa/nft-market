@@ -4,7 +4,6 @@ import {
   Button,
   Drawer,
   DrawerBody,
-  DrawerFooter,
   DrawerHeader,
   DrawerOverlay,
   DrawerContent,
@@ -61,7 +60,7 @@ function Menu() {
           </DrawerHeader>
           <Divider />
           <DrawerBody p={0}>
-            <VStack align="stretch" px="30px" py="15px">
+            <VStack align="stretch" px="7" py="3">
               <HStack bg="#262d3a" p={4} borderRadius="xl">
                 <Icon boxSize="6" textColor="#A154F4" as={FaEthereum} />
                 <Text>543,694,489 ETH</Text>
