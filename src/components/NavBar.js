@@ -19,9 +19,9 @@ function NavBar() {
   return (
     <>
       <VStack w="full">
-        <HStack p="8px 8px 4px 8px" w="full">
+        <HStack w="full" p="2">
           <Menu />
-          <InputGroup flex="1" h="full">
+          <InputGroup ml="0px" flex="1" h="full">
             <InputLeftElement
               h="full"
               pointerEvents="none"
@@ -32,7 +32,7 @@ function NavBar() {
               bgColor="#262D3A"
               width="100%"
               placeholder="Search"
-              h="full"
+              h={{ base: "40px", md: "full" }}
               borderRadius="xl"
               _placeholder={{ color: "#eee" }}
             />
