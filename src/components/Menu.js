@@ -29,7 +29,7 @@ function Menu() {
   const btnRef = React.useRef();
 
   return (
-    <>
+    <Box d={{ base: "inline-flex", md: "none" }}>
       <Button ref={btnRef} bg="transparent" border="none" onClick={onOpen}>
         <Icon as={AiOutlineMenu}></Icon>
       </Button>
@@ -86,7 +86,7 @@ function Menu() {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-    </>
+    </Box>
   );
 }
 export default Menu;
