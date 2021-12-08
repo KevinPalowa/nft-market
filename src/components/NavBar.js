@@ -13,7 +13,6 @@ import {
 } from "@chakra-ui/react";
 import { BsSearch, BsBell } from "react-icons/bs";
 import { RiMessage3Line } from "react-icons/ri";
-
 function NavBar() {
   return (
     <>
@@ -29,7 +28,6 @@ function NavBar() {
               border="none"
               bgColor="#262D3A"
               width="100%"
-              type="tel"
               placeholder="Search"
             />
           </InputGroup>
