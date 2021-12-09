@@ -13,7 +13,7 @@ export default function Banner() {
     <Box
       w="full"
       p={{ base: "18px 15px", md: "60px 40px" }}
-      borderRadius="lg"
+      borderRadius="xl"
       bgGradient="linear(to-br, #6763FD, #B350F3)"
     >
       <VStack align="left">

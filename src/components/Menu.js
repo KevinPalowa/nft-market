@@ -30,7 +30,7 @@ function Menu() {
   return (
     <Box d={{ base: "inline-flex", md: "none" }}>
       <Button ref={btnRef} bg="transparent" border="none" onClick={onOpen}>
-        <Icon as={AiOutlineMenu}></Icon>
+        <Icon boxSize="6" as={AiOutlineMenu}></Icon>
       </Button>
       <Drawer
         isOpen={isOpen}

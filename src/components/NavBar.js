@@ -11,17 +11,20 @@ import {
   VStack,
   HStack,
   Text,
+  Flex,
+  Stack,
 } from "@chakra-ui/react";
 import { FaEthereum } from "react-icons/fa";
 import { BsSearch, BsBell } from "react-icons/bs";
 import { RiMessage3Line } from "react-icons/ri";
+import { AiOutlineDown } from "react-icons/ai";
 function NavBar() {
   return (
-    <>
-      <VStack w="full">
-        <HStack w="full" p="2">
-          <Menu />
-          <InputGroup ml="0px" flex="1" h="full">
+    <Flex w="full" direction="column">
+      <Flex alignItems="center" w="full" p={{ base: "4", md: "5" }}>
+        <Menu />
+        <HStack w="full" h="full">
+          <InputGroup flex="3" h="full">
             <InputLeftElement
               h="full"
               pointerEvents="none"
@@ -30,40 +33,72 @@ function NavBar() {
             <Input
               border="none"
               bgColor="#262D3A"
-              width="100%"
               placeholder="Search"
               h={{ base: "40px", md: "full" }}
               borderRadius="xl"
               _placeholder={{ color: "#eee" }}
             />
           </InputGroup>
-          <HStack
-            ml="10"
-            bg="#262d3a"
-            d={{ base: "none", md: "flex" }}
-            p={4}
-            borderRadius="xl"
-          >
-            <Icon boxSize="6" textColor="#A154F4" as={FaEthereum} />
-            <Text>543,694,489 ETH</Text>
-          </HStack>
-          <HStack px={3}>
-            <Circle size="10" bgColor="#262D3A">
-              <Icon color="#6763FD" as={RiMessage3Line} />
-            </Circle>
-            <Circle size="10" bgColor="#262D3A">
-              <Icon color="#6763FD" as={BsBell} />
-            </Circle>
-          </HStack>
+          <InputGroup d={{ base: "none", md: "flex" }} h="full" flex="1">
+            <InputLeftElement
+              h="full"
+              pointerEvents="none"
+              children={<Icon boxSize="5" color="#A154F4" as={FaEthereum} />}
+            />
+            <Input
+              border="none"
+              bgColor="#262D3A"
+              placeholder="Search"
+              h={{ base: "40px", md: "full" }}
+              borderRadius="xl"
+              _placeholder={{ color: "#eee" }}
+              value="543,694,489 ETH"
+              readOnly
+            />
+          </InputGroup>
+        </HStack>
+        {/* <HStack
+          bg="#262d3a"
+          d={{ base: "none", md: "flex" }}
+          p="16px 12px"
+          ml="5"
+          borderRadius="xl"
+          w="215px"
+        >
+          <Icon boxSize="6" textColor="#A154F4" as={FaEthereum} />
+          <Text fontSize="14px">543,694,489 ETH</Text>
+        </HStack> */}
+        <HStack mx={{ base: 5, md: 4 }}>
+          <Circle size="10" bgColor="#262D3A">
+            <Icon color="#6763FD" as={RiMessage3Line} />
+          </Circle>
+          <Circle size="10" bgColor="#262D3A">
+            <Icon color="#6763FD" as={BsBell} />
+          </Circle>
+        </HStack>
+        <Stack
+          direction="row"
+          spaci
+          alignItems="center"
+          w={{ base: "auto", md: "250px" }}
+        >
           <Avatar
             boxSize="10"
             name="Dan Abrahmov"
             src="https://bit.ly/dan-abramov"
           />
-        </HStack>
-        <Divider d={{ base: "block", md: "none" }} />
-      </VStack>
-    </>
+          <Text d={{ base: "none", md: "block" }} fontSize="14px">
+            Kevin Palowa
+          </Text>
+          <Icon
+            d={{ base: "none", md: "block" }}
+            color="#eee"
+            as={AiOutlineDown}
+          />
+        </Stack>
+      </Flex>
+      <Divider d={{ base: "block", md: "none" }} />
+    </Flex>
   );
 }
 export default NavBar;
