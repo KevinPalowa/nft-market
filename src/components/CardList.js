@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { Grid, Box } from "@chakra-ui/react";
+import { Grid } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import LoadingSkeleton from "./LoadingSkeleton";
 export default function CardList() {
@@ -18,10 +18,8 @@ export default function CardList() {
   }, []);
   return (
     <Grid
-      whiteSpace="nowrap"
-      overflowX="scroll"
-      overflowY="hidden"
-      templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
+      templateColumns={{ md: "repeat(3, 1fr)", base: "repeat(99, 291px)" }}
+      overflowX="auto"
       gap={4}
       w="full"
     >

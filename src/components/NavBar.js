@@ -1,6 +1,5 @@
 import Menu from "./Menu";
 import {
-  Box,
   InputGroup,
   InputLeftElement,
   Input,
@@ -8,7 +7,6 @@ import {
   Circle,
   Avatar,
   Divider,
-  VStack,
   HStack,
   Text,
   Flex,
@@ -57,17 +55,6 @@ function NavBar() {
             />
           </InputGroup>
         </HStack>
-        {/* <HStack
-          bg="#262d3a"
-          d={{ base: "none", md: "flex" }}
-          p="16px 12px"
-          ml="5"
-          borderRadius="xl"
-          w="215px"
-        >
-          <Icon boxSize="6" textColor="#A154F4" as={FaEthereum} />
-          <Text fontSize="14px">543,694,489 ETH</Text>
-        </HStack> */}
         <HStack mx={{ base: 5, md: 4 }}>
           <Circle size="10" bgColor="#262D3A">
             <Icon color="#6763FD" as={RiMessage3Line} />
@@ -78,7 +65,6 @@ function NavBar() {
         </HStack>
         <Stack
           direction="row"
-          spaci
           alignItems="center"
           w={{ base: "auto", md: "250px" }}
         >

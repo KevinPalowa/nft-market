@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Box,
-  VStack,
-  HStack,
-  Icon,
-  Circle,
-  Divider,
-  Center,
-} from "@chakra-ui/react";
+import { Box, VStack, HStack, Icon, Circle, Divider } from "@chakra-ui/react";
 import { AiOutlineSetting } from "react-icons/ai";
 import { MdOutlineDashboard } from "react-icons/md";
 import { FaEthereum } from "react-icons/fa";

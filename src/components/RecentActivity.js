@@ -1,23 +1,14 @@
 import { useEffect, useState } from "react";
-import {
-  Box,
-  Text,
-  UnorderedList,
-  ListItem,
-  HStack,
-  Avatar,
-  VStack,
-  chakra,
-} from "@chakra-ui/react";
+import { Box, Text, HStack, Avatar, VStack, chakra } from "@chakra-ui/react";
 export default function RecentActivity() {
-  const [recentActivities, setrecentActivities] = useState([]);
+  const [recentActivities, setRecentActivities] = useState([]);
   useEffect(() => {
     const getData = async () => {
       const response = await fetch(
         `https://6196ed95af46280017e7e326.mockapi.io/waveast/api/nft-marketplace/recent-activities`
       );
       const data = await response.json();
-      setrecentActivities(data);
+      setRecentActivities(data);
     };
     getData();
   }, []);

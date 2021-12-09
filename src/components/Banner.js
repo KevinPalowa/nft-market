@@ -1,13 +1,5 @@
 import React from "react";
-import {
-  Container,
-  VStack,
-  Button,
-  Text,
-  Heading,
-  HStack,
-  Box,
-} from "@chakra-ui/react";
+import { VStack, Button, Text, Heading, HStack, Box } from "@chakra-ui/react";
 export default function Banner() {
   return (
     <Box

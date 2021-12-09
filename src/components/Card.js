@@ -3,7 +3,6 @@ import {
   Image,
   Icon,
   Circle,
-  Center,
   Text,
   Avatar,
   AvatarGroup,
