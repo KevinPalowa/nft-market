@@ -15,6 +15,7 @@ function App() {
           <NavBar />
           <Flex
             px={{ base: "4", md: "5" }}
+            pb={{ base: "4", md: "5" }}
             direction={{ base: "column", md: "row" }}
             w="full"
           >

@@ -11,8 +11,10 @@ export default function Category() {
     "Utillity",
   ];
   return (
-    <Box my={7} w="full" align="left">
-      <Heading>Explore</Heading>
+    <Box mt="1.75rem !important" w="full">
+      <Heading mb="4" fontSize="20px">
+        Explore
+      </Heading>
       <HStack whiteSpace="nowrap" className="noScrollBar" overflow="scroll">
         {listChips.map((data) => (
           <CategoryChip key={data}>{data}</CategoryChip>

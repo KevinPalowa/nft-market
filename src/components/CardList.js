@@ -18,7 +18,8 @@ export default function CardList() {
   }, []);
   return (
     <Grid
-      templateColumns={{ md: "repeat(3, 1fr)", base: "repeat(99, 291px)" }}
+      my={{ base: "1.25rem !important", md: "1.75rem !important" }}
+      templateColumns={{ md: "repeat(3, 1fr)", base: "repeat(14, 291px)" }}
       overflowX="auto"
       gap={4}
       w="full"
