@@ -7,7 +7,6 @@ import {
   Circle,
   Avatar,
   Divider,
-  HStack,
   Text,
   Flex,
   Stack,
@@ -21,7 +20,7 @@ function NavBar() {
     <Flex w="full" direction="column">
       <Flex alignItems="center" w="full" p={{ base: "4", md: "5" }}>
         <Menu />
-        <HStack w="full" h="full">
+        <Flex w={{ base: "auto", md: "75%" }} h="full">
           <InputGroup flex="3" h="full">
             <InputLeftElement
               h="full"
@@ -37,7 +36,7 @@ function NavBar() {
               _placeholder={{ color: "#eee" }}
             />
           </InputGroup>
-          <InputGroup d={{ base: "none", md: "flex" }} h="full" flex="1">
+          <InputGroup mx="5" d={{ base: "none", md: "flex" }} h="full" flex="1">
             <InputLeftElement
               h="full"
               pointerEvents="none"
@@ -47,41 +46,43 @@ function NavBar() {
               border="none"
               bgColor="#262D3A"
               placeholder="Search"
-              h={{ base: "40px", md: "full" }}
+              h={{ base: "40px", md: "56px" }}
               borderRadius="xl"
               _placeholder={{ color: "#eee" }}
               value="543,694,489 ETH"
               readOnly
             />
           </InputGroup>
-        </HStack>
-        <HStack mx={{ base: 5, md: 4 }}>
-          <Circle size="10" bgColor="#262D3A">
-            <Icon color="#6763FD" as={RiMessage3Line} />
-          </Circle>
-          <Circle size="10" bgColor="#262D3A">
-            <Icon color="#6763FD" as={BsBell} />
-          </Circle>
-        </HStack>
-        <Stack
-          direction="row"
-          alignItems="center"
-          w={{ base: "auto", md: "250px" }}
-        >
-          <Avatar
-            boxSize="10"
-            name="Dan Abrahmov"
-            src="https://bit.ly/dan-abramov"
-          />
-          <Text d={{ base: "none", md: "block" }} fontSize="14px">
-            Kevin Palowa
-          </Text>
-          <Icon
-            d={{ base: "none", md: "block" }}
-            color="#eee"
-            as={AiOutlineDown}
-          />
-        </Stack>
+        </Flex>
+        <Flex w={{ base: "auto", md: "25%" }}>
+          <Flex mr="4" ml={{ base: 5, md: 0 }}>
+            <Circle mr="4" size="10" bgColor="#262D3A">
+              <Icon color="#6763FD" as={RiMessage3Line} />
+            </Circle>
+            <Circle size="10" bgColor="#262D3A">
+              <Icon color="#6763FD" as={BsBell} />
+            </Circle>
+          </Flex>
+          <Stack
+            direction="row"
+            alignItems="center"
+            w={{ base: "auto", md: "250px" }}
+          >
+            <Avatar
+              boxSize="10"
+              name="Dan Abrahmov"
+              src="https://bit.ly/dan-abramov"
+            />
+            <Text d={{ base: "none", md: "block" }} fontSize="14px">
+              Kevin Palowa
+            </Text>
+            <Icon
+              d={{ base: "none", md: "block" }}
+              color="#eee"
+              as={AiOutlineDown}
+            />
+          </Stack>
+        </Flex>
       </Flex>
       <Divider d={{ base: "block", md: "none" }} />
     </Flex>

@@ -6,7 +6,7 @@ import Category from "./components/Category";
 import CardList from "./components/CardList";
 import TopArtists from "./components/TopArtists";
 import RecentActivity from "./components/RecentActivity";
-function App() {
+const App = () => {
   return (
     <Box bg="#1B1E2A" color="white">
       <Flex color="white">
@@ -19,12 +19,17 @@ function App() {
             direction={{ base: "column", md: "row" }}
             w="full"
           >
-            <VStack mr="5" flex="3" w={{ base: "full", md: "94%" }}>
+            <VStack flex="3" w={{ base: "full", md: "75%%" }}>
               <Banner />
               <Category />
               <CardList />
             </VStack>
-            <VStack h="full" flex="1" w={{ base: "full", md: "30%" }}>
+            <VStack
+              h="full"
+              ml={{ md: "5" }}
+              flex="1"
+              w={{ base: "full", md: "25%" }}
+            >
               <TopArtists />
               <RecentActivity />
             </VStack>
@@ -33,6 +38,6 @@ function App() {
       </Flex>
     </Box>
   );
-}
+};
 
 export default App;

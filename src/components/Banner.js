@@ -11,12 +11,13 @@ export default function Banner() {
       <VStack align="left">
         <Box w="75%" mb={{ base: "2", md: "5" }}>
           <Heading
-            fontSize={{ base: "md", md: "3xl" }}
+            fontSize={{ base: "md", md: "40px" }}
             mb={{ base: "2", md: "5" }}
+            fontWeight="600"
           >
             One Stop NFT Marketplace
           </Heading>
-          <Text fontSize={{ base: "xs", md: "md" }}>
+          <Text fontSize={{ base: "xs", md: "18px" }}>
             Discover limited-edition digital artwork
             <br /> Create, Sell and Collect yours now!
           </Text>
