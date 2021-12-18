@@ -1,8 +1,10 @@
 # NFT Market Sprint Challenge
 
-Halo ini adalah hasil dari Sprint Challenge dari discord waveast.
+Dashboard page hasil dari Sprint Challenge dari discord [waveast](https://discord.com/invite/qEeJfeeKS4).
 
-### Teknologi yang di gunakan
+[Click for demo](nft-market23.netlify.app)
+
+## Teknologi yang di gunakan
 
 - React with [Create React App](https://create-react-app.dev/)
 - [Chakra UI](https://chakra-ui.com/)
